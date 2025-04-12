@@ -1,0 +1,10 @@
+site_name: test
+site_url: https://tkutschbach.github.io
+site_author: tkutschbach
+site_description: test
+
+theme:
+  name: material
+
+nav:
+  - About: index.md
