@@ -1,10 +1,21 @@
-site_name: test
+site_name: Tino Kutschbach
 site_url: https://tkutschbach.github.io
-site_author: tkutschbach
-site_description: test
+site_author: Tino Kutschbach
+site_description: Tino Kutschbach's personal website and blog
 
 theme:
   name: material
 
+plugins:
+  - blog:
+      blog_dir: .
+  - search
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 nav:
-  - About: index.md
+  - Blog: index.md
